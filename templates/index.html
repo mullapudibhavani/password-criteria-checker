@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Checker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+
+<div class="container">
+  <h2>Password Criteria Checker</h2>
+
+  <form method="POST">
+    <input type="password" name="password" placeholder="Enter password" required>
+    <button type="submit">Check Password</button>
+  </form>
+  {% if strength %}
+  <p><strong>Strength:</strong> {{ strength }}</p>
+
+  <div class="meter">
+    <div class="meter-fill"
+         style="width: {{ percentage }}%; background-color: {{ color }};">
+    </div>
+  </div>
+{% endif %}
+
+
+  {% if result %}
+    <h3>{{ result }}</h3>
+  {% endif %}
+
+  {% if errors %}
+    <ul style="color:red:">
+      {% for error in errors %}
+        <li>{{ error }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
+
+</body>
+</html>
