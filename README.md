@@ -57,6 +57,31 @@ password_checker/
 
 
 ---
+##  Example Validation Rules
+
+
+Password length ≥ 8 characters
+
+At least one uppercase letter
+
+At least one lowercase letter
+
+At least one digit
+
+At least one special character
+
+---
+##  🎯 Use Cases
+
+Learning Flask fundamentals
+
+Understanding regex-based validation
+
+Cybersecurity awareness projects
+
+Beginner-friendly backend application
+
+Resume and academic submissions
 
 ## ⚙️ How to Run the Project Locally
 
@@ -88,32 +113,8 @@ python app.py
 6️⃣ Open in Browser
 http://127.0.0.1:5000/
 
+---
 
 
-  📊 Example Validation Rules
 
-Password length ≥ 8 characters
 
-At least one uppercase letter
-
-At least one lowercase letter
-
-At least one digit
-
-At least one special character
-
-🎯 Use Cases
-
-Learning Flask fundamentals
-
-Understanding regex-based validation
-
-Cybersecurity awareness projects
-
-Beginner-friendly backend application
-
-Resume and academic submissions
-
-Beginner-friendly backend application
-
-Resume and academic submissions
